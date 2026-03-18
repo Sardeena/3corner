@@ -335,9 +335,9 @@ body {
 /* Hero Stats */
 .hero-stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -856,14 +856,6 @@ body {
 
 .footer-section ul li {
     margin-bottom: 0.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.footer-section ul li i {
-    color: #667eea;
-    font-size: 0.9rem;
 }
 
 .footer-section a {
@@ -980,7 +972,7 @@ body {
     }
     
     .footer-content {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 2fr 1fr;
     }
 }
 
