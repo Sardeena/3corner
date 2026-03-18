@@ -10,6 +10,67 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Mailchimp Styles -->
+    <style type="text/css">
+        #mc_embed_signup{background: transparent; clear:left; font:14px Helvetica,Arial,sans-serif; width: 100%;}
+        #mc_embed_signup .mc-field-group {
+            margin-bottom: 1rem;
+        }
+        #mc_embed_signup input.email {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        #mc_embed_signup input.email::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        #mc_embed_signup input.email:focus {
+            outline: none;
+            border-color: #667eea;
+            background: rgba(255, 255, 255, 0.15);
+        }
+        #mc_embed_signup input.button {
+            width: 100%;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        #mc_embed_signup input.button:hover {
+            background: linear-gradient(135deg, #5a67d8, #6b46c1);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+        #mc_embed_signup .response {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+        #mc_embed_signup #mce-error-response {
+            background: rgba(239, 68, 68, 0.1);
+            color: #fca5a5;
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+        #mc_embed_signup #mce-success-response {
+            background: rgba(34, 197, 94, 0.1);
+            color: #86efac;
+            border: 1px solid rgba(34, 197, 94, 0.2);
+        }
+    </style>
 </head>
 <body>
     <div class="background-gradient"></div>
@@ -337,6 +398,27 @@
                             <li><a href="#benefits">Why Review</a></li>
                         </ul>
                     </div>
+                    <div class="footer-section">
+                        <h4>Newsletter</h4>
+                        <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1rem; font-size: 0.9rem;">Stay updated with our latest news and special offers</p>
+                        <div id="mc_embed_signup">
+                            <form action="https://app.us7.list-manage.com/subscribe/post?u=01ea14492f62989a726865d5b&amp;id=e8c46d7960&amp;f_id=0044d6e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                                <div class="mc-field-group">
+                                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email address" required="">
+                                </div>
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display: none;"></div>
+                                    <div class="response" id="mce-success-response" style="display: none;"></div>
+                                </div>
+                                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                    <input type="text" name="b_01ea14492f62989a726865d5b_e8c46d7960" tabindex="-1" value="">
+                                </div>
+                                <div class="clear">
+                                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -345,5 +427,9 @@
             </div>
         </div>
     </footer>
+    
+    <!-- Mailchimp Script -->
+    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </body>
 </html>
