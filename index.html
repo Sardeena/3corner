@@ -8,24 +8,70 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="background-gradient"></div>
+    <div class="floating-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
     
     <header class="header">
         <div class="container">
-            <h1 class="hotel-name">The Three Corners Equinox</h1>
-            <p class="hotel-location">Marsa Alam, Egypt</p>
-            <p class="hotel-description">Share your experience or read reviews from fellow travelers</p>
+            <div class="header-content">
+                <div class="hotel-badge">
+                    <i class="fas fa-star"></i>
+                    <span>PREMIUM RESORT</span>
+                </div>
+                <h1 class="hotel-name">The Three Corners Equinox</h1>
+                <div class="location-info">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="hotel-location">Marsa Alam, Egypt</p>
+                </div>
+                <p class="hotel-description">Share your experience and help fellow travelers discover paradise</p>
+                <div class="rating-display">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rating-text">4.8/5 Exceptional</span>
+                </div>
+            </div>
         </div>
     </header>
 
     <main class="main">
         <section class="hero-section">
             <div class="container">
-                <h2 class="section-title">Leave a Review</h2>
-                <p class="section-subtitle">Choose your preferred platform to share your experience</p>
+                <div class="hero-content">
+                    <h2 class="section-title">Share Your Experience</h2>
+                    <p class="section-subtitle">Your feedback helps us create unforgettable moments for every guest</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10,000+</span>
+                            <span class="stat-label">Happy Guests</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.8★</span>
+                            <span class="stat-label">Average Rating</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Review Platforms</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -35,91 +81,193 @@
                     
                     <!-- Google Reviews -->
                     <article class="platform-card" data-aos="fade-up">
-                        <div class="platform-logo">
-                            <img src="assets/logos/google-reviews.svg" alt="Google Reviews logo" loading="lazy">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <img src="assets/logos/google-reviews.svg" alt="Google Reviews logo" loading="lazy">
+                            </div>
+                            <div class="platform-rating">
+                                <div class="mini-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">2.3k reviews</span>
+                            </div>
                         </div>
                         <h3 class="platform-name">Google Reviews</h3>
-                        <p class="platform-description">Share your experience on Google</p>
+                        <p class="platform-description">Share your experience on the world's largest review platform</p>
+                        <div class="platform-features">
+                            <span class="feature-tag"><i class="fas fa-globe"></i> Global Reach</span>
+                            <span class="feature-tag"><i class="fas fa-camera"></i> Photo Upload</span>
+                        </div>
                         <a href="https://www.google.com/travel/hotels/s/YwWWXxyb5xmpo5xF6" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            class="cta-button">
-                            Write Review
+                           <i class="fas fa-edit"></i>
+                           Write Review
                         </a>
                     </article>
 
                     <!-- TripAdvisor -->
                     <article class="platform-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="platform-logo">
-                            <img src="assets/logos/tripadvisor.svg" alt="TripAdvisor logo" loading="lazy">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <img src="assets/logos/tripadvisor.svg" alt="TripAdvisor logo" loading="lazy">
+                            </div>
+                            <div class="platform-rating">
+                                <div class="mini-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">1.8k reviews</span>
+                            </div>
                         </div>
                         <h3 class="platform-name">TripAdvisor</h3>
-                        <p class="platform-description">Review on TripAdvisor</p>
+                        <p class="platform-description">World's largest travel platform with millions of reviews</p>
+                        <div class="platform-features">
+                            <span class="feature-tag"><i class="fas fa-award"></i> Travelers' Choice</span>
+                            <span class="feature-tag"><i class="fas fa-users"></i> Community</span>
+                        </div>
                         <a href="https://www.tripadvisor.com.eg/Hotel_Review-g311425-d7186223-Reviews-Three_Corners_Equinox_Beach_Resort-Marsa_Alam_Red_Sea_and_Sinai.html?m=19905" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            class="cta-button">
-                            Write Review
+                           <i class="fas fa-edit"></i>
+                           Write Review
                         </a>
                     </article>
 
                     <!-- HolidayCheck -->
                     <article class="platform-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="platform-logo">
-                            <img src="assets/logos/holidaycheck.svg" alt="HolidayCheck logo" loading="lazy">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <img src="assets/logos/holidaycheck.svg" alt="HolidayCheck logo" loading="lazy">
+                            </div>
+                            <div class="platform-rating">
+                                <div class="mini-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">956 reviews</span>
+                            </div>
                         </div>
                         <h3 class="platform-name">HolidayCheck</h3>
-                        <p class="platform-description">Share on HolidayCheck</p>
+                        <p class="platform-description">Leading European holiday review platform</p>
+                        <div class="platform-features">
+                            <span class="feature-tag"><i class="fas fa-euro-sign"></i> European Focus</span>
+                            <span class="feature-tag"><i class="fas fa-sun"></i> Holiday Specialists</span>
+                        </div>
                         <a href="https://www.holidaycheck.de/hi/three-corners-equinox-beach-resort/afa01d38-156a-37b7-a92a-5bd391714720" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            class="cta-button">
-                            Write Review
+                           <i class="fas fa-edit"></i>
+                           Write Review
                         </a>
                     </article>
 
                     <!-- Zoover -->
                     <article class="platform-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="platform-logo">
-                            <img src="assets/logos/zoover.svg" alt="Zoover logo" loading="lazy">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <img src="assets/logos/zoover.svg" alt="Zoover logo" loading="lazy">
+                            </div>
+                            <div class="platform-rating">
+                                <div class="mini-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <span class="rating-count">623 reviews</span>
+                            </div>
                         </div>
                         <h3 class="platform-name">Zoover</h3>
-                        <p class="platform-description">Review on Zoover</p>
+                        <p class="platform-description">Trusted Dutch travel review community</p>
+                        <div class="platform-features">
+                            <span class="feature-tag"><i class="fas fa-check-circle"></i> Verified Reviews</span>
+                            <span class="feature-tag"><i class="fas fa-map-marked-alt"></i> Detailed Info</span>
+                        </div>
                         <a href="https://www.zoover.nl/a/152965/three-corners-equinox-beach-resort" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            class="cta-button">
-                            Write Review
+                           <i class="fas fa-edit"></i>
+                           Write Review
                         </a>
                     </article>
 
                     <!-- TopHotels -->
                     <article class="platform-card" data-aos="fade-up" data-aos-delay="400">
-                        <div class="platform-logo">
-                            <img src="assets/logos/tophotels.svg" alt="TopHotels logo" loading="lazy">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <img src="assets/logos/tophotels.svg" alt="TopHotels logo" loading="lazy">
+                            </div>
+                            <div class="platform-rating">
+                                <div class="mini-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">412 reviews</span>
+                            </div>
                         </div>
                         <h3 class="platform-name">TopHotels</h3>
-                        <p class="platform-description">Share on TopHotels</p>
+                        <p class="platform-description">Russian hotel review and booking platform</p>
+                        <div class="platform-features">
+                            <span class="feature-tag"><i class="fas fa-gem"></i> Premium Hotels</span>
+                            <span class="feature-tag"><i class="fas fa-ruble-sign"></i> Russian Market</span>
+                        </div>
                         <a href="https://tophotels.ru/en/hotel/al22520" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            class="cta-button">
-                            Write Review
+                           <i class="fas fa-edit"></i>
+                           Write Review
                         </a>
                     </article>
 
                     <!-- Booking.com -->
                     <article class="platform-card" data-aos="fade-up" data-aos-delay="500">
-                        <div class="platform-logo">
-                            <img src="assets/logos/bookingcom.svg" alt="Booking.com logo" loading="lazy">
+                        <div class="platform-header">
+                            <div class="platform-logo">
+                                <img src="assets/logos/bookingcom.svg" alt="Booking.com logo" loading="lazy">
+                            </div>
+                            <div class="platform-rating">
+                                <div class="mini-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">3.1k reviews</span>
+                            </div>
                         </div>
                         <h3 class="platform-name">Booking.com</h3>
-                        <p class="platform-description">Review on Booking.com</p>
+                        <p class="platform-description">World's largest online travel booking platform</p>
+                        <div class="platform-features">
+                            <span class="feature-tag"><i class="fas fa-shield-alt"></i> Verified Stays</span>
+                            <span class="feature-tag"><i class="fas fa-globe-americas"></i> Worldwide</span>
+                        </div>
                         <a href="https://www.booking.com/Share-5wgIRs3" 
                            target="_blank" 
                            rel="noopener noreferrer" 
                            class="cta-button">
-                            Write Review
+                           <i class="fas fa-edit"></i>
+                           Write Review
                         </a>
                     </article>
 
@@ -130,21 +278,47 @@
         <section class="info-section">
             <div class="container">
                 <div class="info-content">
-                    <h2 class="section-title">Your Feedback Matters</h2>
-                    <p class="section-subtitle">Help other travelers discover the perfect stay</p>
+                    <h2 class="section-title">Why Your Reviews Matter</h2>
+                    <p class="section-subtitle">Every review helps us create better experiences for future guests</p>
                     
                     <div class="benefits-grid">
                         <div class="benefit-item">
-                            <h3>Share Your Experience</h3>
-                            <p>Tell others about your stay at The Three Corners Equinox</p>
+                            <div class="benefit-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Share Your Story</h3>
+                            <p>Your experience helps others discover their perfect vacation at The Three Corners Equinox</p>
                         </div>
                         <div class="benefit-item">
-                            <h3>Help Travelers Decide</h3>
-                            <p>Your reviews help others make informed choices</p>
+                            <div class="benefit-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Guide Travelers</h3>
+                            <p>Honest reviews help fellow travelers make informed decisions about their stay</p>
                         </div>
                         <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
                             <h3>Improve Our Service</h3>
-                            <p>Your feedback helps us enhance your experience</p>
+                            <p>Your valuable feedback helps us continuously enhance our services and facilities</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonials-preview">
+                        <div class="testimonial-item">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Amazing resort with exceptional service! The staff went above and beyond to make our stay memorable."</p>
+                            <div class="testimonial-author">
+                                <span>- Sarah M., UK</span>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -154,8 +328,32 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">© 2024 The Three Corners Equinox, Marsa Alam, Egypt</p>
-            <p class="footer-subtext">Thank you for sharing your experience</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>The Three Corners Equinox</h3>
+                    <p>Marsa Alam, Egypt</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#platforms">Review Platforms</a></li>
+                            <li><a href="#benefits">Why Review</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> info@equinox.com</li>
+                            <li><i class="fas fa-phone"></i> +20 12 345 6789</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-text">© 2024 The Three Corners Equinox, Marsa Alam, Egypt</p>
+                <p class="footer-subtext">Thank you for sharing your experience with us</p>
+            </div>
         </div>
     </footer>
 </body>
